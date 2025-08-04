@@ -22,10 +22,10 @@
 
 ##  Email Sample (Used in This Simulation)
 
-**Sender**: PayPal <security@paypalsecure-email.com>
-**Subject**: Unusual Login Attempt Detected
-**Link**: <https://secure-paypal-update.com/login> 
-**Body**: See <https://github.com/Ibrahim-Ajao/Email-Sample/blob/main/README.md> for full content.
+- Sender: PayPal <security@paypalsecure-email.com>
+- Subject: Unusual Login Attempt Detected
+- Link: <https://secure-paypal-update.com/login> 
+- Body: See <https://github.com/Ibrahim-Ajao/Email-Sample/blob/main/README.md> for full content.
 
 ---
 
