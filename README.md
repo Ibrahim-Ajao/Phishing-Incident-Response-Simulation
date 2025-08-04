@@ -55,5 +55,12 @@
 ---
 ## Screenshots from tools used
 
+## Email Header Analyzer
+![](./Google.png)
+
+## Virustotal
 ![Virustotal](./virustotal.png)
+
+## WHOIS/IPInfo
+![](./whois.png)
 ---
