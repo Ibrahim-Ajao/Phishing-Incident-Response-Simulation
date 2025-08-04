@@ -1,0 +1,100 @@
+#  Phishing Email Incident Report
+
+##  Overview
+
+**Incident Type:** Phishing Attempt  
+**Reported Date:** July 25, 2025  
+**Reporting Analyst:** Ajao Ibrahim Adewale  
+**Environment Affected:** Simulated Corporate Email System  
+**Status:** Closed – No Impact Confirmed  
+
+---
+
+## Email Summary
+
+| Field       | Details                                 |
+|-------------|------------------------------------------|
+| **Sender**  | PayPal <security@paypalsecure-email.com> |
+| **Recipient** | user@example.com                        |
+| **Subject** | Unusual Login Attempt Detected           |
+| **Date**    | Thu, 25 Jul 2025 09:14:29 -0700          |
+| **Link**    | <https://secure-paypal-update.com/login> |
+
+---
+
+##  Initial Observation
+
+The email mimicked a legitimate PayPal security notification, warning the recipient of an "unauthorized login attempt" and urging them to click on a URL to verify their identity. The message included urgent language and branding to trick the user into interacting with the link.
+
+---
+
+##  Analysis
+
+### 1. **Header Review**  
+- **Sender domain:** `paypalsecure-email.com` (spoofed)  
+- **Reply-To:** Different from actual PayPal addresses  
+- **SPF/DKIM:** Failed verification (simulated)  
+- **Conclusion:** High confidence of spoofed origin
+
+### 2. **URL Scan – VirusTotal**
+- Link: `https://secure-paypal-update.com/login`
+- Detection: **9/89 engines flagged as phishing**
+- Tags: `phishing`, `fake-login`, `brand-spoofing`
+- Screenshot: Fake PayPal login form collecting credentials
+
+### 3. **URLScan.io Analysis**
+- Site behavior: Loads fake login form, sends input via JavaScript
+- Scripts: Uses obfuscated JavaScript for redirection and credential submission
+- Visual: Page design mimics official PayPal website
+
+### 4. **WHOIS & IP Info**
+- **Domain:** `secure-paypal-update.com`
+- **Created:** July 20, 2025 (5 days before email sent)
+- **Registrar:** Namecheap
+- **Whois Privacy:** Enabled
+- **IP Address:** `203.0.113.44` (DigitalOcean)
+- **IP Reputation:** Abuse score: 82/100 on AbuseIPDB
+
+---
+
+##  Indicators of Compromise (IOCs)
+
+| Type        | Value                              |
+|-------------|-------------------------------------|
+| Domain      | `secure-paypal-update.com`          |
+| URL         | `https://secure-paypal-update.com/login` |
+| IP Address  | `203.0.113.44`                      |
+| Email Sender | `security@paypalsecure-email.com` |
+
+---
+
+##  Risk Assessment
+
+| Risk Factor           | Value           |
+|------------------------|----------------|
+| Urgency of Message     | High (scare tactic) |
+| Technical Sophistication | Moderate |
+| Target Scope           | Generic consumer |
+| Credential Harvesting  | Confirmed via link behavior |
+
+---
+
+##  Recommended Actions
+
+1. **Block Domain/IP**:
+   - Block `secure-paypal-update.com` at DNS/firewall level
+   - Block IP `203.0.113.44` on perimeter defenses
+
+2. **User Awareness**:
+   - Send internal advisory warning users about phishing attempts
+   - Remind users never to click on unsolicited security links
+
+3. **Report to External Authorities**:
+   - Report the URL to Google Safe Browsing
+   - Notify PayPal's abuse team at: phishing@paypal.com
+
+4. **Monitor for Impact**:
+   - Check if any users interacted with the link
+   - Investigate credential use (if log data is available)
+
+---
