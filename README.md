@@ -49,7 +49,7 @@
 
 ## Final Report 
 
- <a href="https://github.com/Ibrahim-Ajao/Incident_report/edit/main/README.md">INCIDENT REPORT</a>
+ <a href="https://github.com/Ibrahim-Ajao/Phishing-Incident-Response-Simulation/blob/main/incident_report">INCIDENT REPORT</a>
 
 ---
 ## Screenshots from tools used
