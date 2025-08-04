@@ -39,10 +39,6 @@
 
 ---
 
-## Screenshots from tools used
-
----
-
 ##  Sample IOCs (Indicators of Compromise)
 
 - secure-paypal-update.com
@@ -56,4 +52,8 @@
 
 <https://github.com/Ibrahim-Ajao/Final-phishing-incident-report/blob/main/README.md>
 
+---
+## Screenshots from tools used
+
+![Virustotal](./virustotal.png)
 ---
