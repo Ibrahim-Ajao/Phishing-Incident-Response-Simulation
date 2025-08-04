@@ -34,7 +34,6 @@
 - Header parsed via [Google MessageHeader Tool](https://toolbox.googleapps.com/apps/messageheader/)
 - URL scanned via VirusTotal & URLScan.io
 - Domain WHOIS and IP address info extracted and verified
-- IOCs extracted and listed in `/analysis/ioc_scan_results.md`
 - All steps and findings summarized in the final report
 
 ---
@@ -48,7 +47,7 @@
 
 ---
 
-## 📄 Final Report Location
+## Final Report Location
 
 <https://github.com/Ibrahim-Ajao/Final-phishing-incident-report/blob/main/README.md>
 
