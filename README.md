@@ -25,7 +25,7 @@
 - Sender: PayPal <security@paypalsecure-email.com>
 - Subject: Unusual Login Attempt Detected
 - Link: <https://secure-paypal-update.com/login> 
-- Body: See <https://github.com/Ibrahim-Ajao/Email-Sample/blob/main/README.md> for full content.
+- Body: See<a href="https://github.com/Ibrahim-Ajao/Email-Sample/blob/main/README.md">Email</a> for full content.
 
 ---
 
