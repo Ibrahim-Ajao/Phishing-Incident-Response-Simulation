@@ -1,10 +1,6 @@
-# 🛡️ Phishing Incident Response Simulation
+## Phishing Incident Response Simulation
 
-This project simulates a real-world phishing email investigation process, modeled on how a SOC analyst would triage, investigate, and report a phishing attack.
-
----
-
-## 📌 Project Goals
+## objectives
 
 - Analyze a simulated phishing email
 - Identify and extract IOCs (URLs, IPs, domains)
@@ -13,7 +9,7 @@ This project simulates a real-world phishing email investigation process, modele
 
 ---
 
-## 🧰 Tools Used
+##  Tools Used
 
 | Tool        | Purpose                             |
 |-------------|-------------------------------------|
@@ -24,16 +20,16 @@ This project simulates a real-world phishing email investigation process, modele
 
 ---
 
-## 📨 Email Sample (Used in This Simulation)
+##  Email Sample (Used in This Simulation)
 
-**Sender**: PayPal <security@paypalsecure-email.com>  
-**Subject**: Unusual Login Attempt Detected  
-**Link**: `https://secure-paypal-update.com/login`  
+**Sender**: <marketing@mcgeorgeconsulting.com>  
+**Subject**: Practical Tech Skills for Young Minds
+**Link**: `http://www.mctechy.com`  
 **Body**: See `email_sample.txt` for full content.
 
 ---
 
-## 🔍 Analysis Steps
+## Analysis Steps
 
 - Header parsed via [Google MessageHeader Tool](https://toolbox.googleapps.com/apps/messageheader/)
 - URL scanned via VirusTotal & URLScan.io
@@ -43,7 +39,7 @@ This project simulates a real-world phishing email investigation process, modele
 
 ---
 
-## 📄 Files Overview
+##  Files Overview
 
 | File/Folder       | Description                             |
 |-------------------|-----------------------------------------|
@@ -54,7 +50,7 @@ This project simulates a real-world phishing email investigation process, modele
 
 ---
 
-## 🔗 Sample IOCs (Indicators of Compromise)
+##  Sample IOCs (Indicators of Compromise)
 
 - `secure-paypal-update.com`
 - Domain IP: `203.0.113.44`
@@ -65,25 +61,7 @@ This project simulates a real-world phishing email investigation process, modele
 
 ## 📄 Final Report Location
 
-`/report/phishing_incident_report.md`  
+`/report/phishing_incident_report.md`
 Includes: timeline, IOCs, tools used, and recommendations for next steps.
-
----
-
-## 🎓 Learning Outcomes
-
-- Email header triage & spoofing detection
-- URL and file threat intelligence using open-source tools
-- IOC extraction and correlation
-- Writing a clear, structured incident response report
-
----
-
-## 👤 Author
-
-**Ajao Ibrahim Adewale**  
-SOC Analyst Trainee | Google Cybersecurity Professional Certificate Graduate  
-📧 your.email@example.com  
-🔗 [GitHub Portfolio](https://github.com/yourusername)
 
 ---
