@@ -39,21 +39,14 @@
 
 ---
 
-##  Files Overview
-
-| File/Folder       | Description                             |
-|-------------------|-----------------------------------------|
-| `email_sample.txt`| The phishing email text (simulated)     |
-| `/analysis/`      | Raw findings from online scans          |
-| `/report/`        | Final incident response report          |
-| `/screenshots/`   | Screenshots from tools used             |
+## Screenshots from tools used
 
 ---
 
 ##  Sample IOCs (Indicators of Compromise)
 
-- `secure-paypal-update.com`
-- Domain IP: `203.0.113.44`
+- secure-paypal-update.com
+- Domain IP: 203.0.113.44
 - Created: July 20, 2025
 - Flags: Phishing, typo domain, Whois privacy
 
@@ -61,7 +54,6 @@
 
 ## 📄 Final Report Location
 
-`/report/phishing_incident_report.md`
-Includes: timeline, IOCs, tools used, and recommendations for next steps.
+<https://github.com/Ibrahim-Ajao/Final-phishing-incident-report/blob/main/README.md>
 
 ---
